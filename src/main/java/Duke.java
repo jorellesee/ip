@@ -150,20 +150,20 @@ public class Duke {
             System.out.println("Something went wrong: " + e.getMessage());
         }
     }
-    private static void retrieveTasks() {
-        String home = System.getProperty("user.home");
-        boolean directoryExists = new java.io.File(home + "/Desktop/tasks.txt").exists();
-        if(!directoryExists){
-            System.out.println("directory does not exist");
-        }
-        String filePath = home + "/Desktop/tasks.txt";
-        Scanner s = new Scanner(filePath);
-        while (s.hasNext()) {
-            String next = s.nextLine();
-            if(next.charAt(1) == 'T'){
-                addTodo();
-            }
-        }
-    }
+//    private static void retrieveTasks() {
+//        String home = System.getProperty("user.home");
+//        boolean directoryExists = new java.io.File(home + "/Desktop/tasks.txt").exists();
+//        if(!directoryExists){
+//            System.out.println("directory does not exist");
+//        }
+//        String filePath = home + "/Desktop/tasks.txt";
+//        Scanner s = new Scanner(filePath);
+//        while (s.hasNext()) {
+//            String next = s.nextLine();
+//            if(next.charAt(1) == 'T'){
+//                addTodo();
+//            }
+//        }
+//    }
 }
 
